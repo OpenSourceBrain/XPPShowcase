@@ -1,7 +1,7 @@
-target: nca.ode
+target: fhn.ode
 engine: XPP
 
-mep: .test.xpp.mep
+mep: .test.fhn.xpp.mep
 experiments:
   spikes:
     observables:
@@ -12,6 +12,6 @@ experiments:
           scaling: [1, 1]
         spike detection: 
           method: threshold
-          threshold: 0
+          threshold: 0.5
         tolerance: 0.00
 

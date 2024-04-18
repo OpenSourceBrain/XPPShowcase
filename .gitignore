@@ -1,1 +1,7 @@
 /XPP/output.dat
+/NeuroML2/LEMS_NML2_Ex9_FN.ode
+*_brian2.py
+/NeuroML2/*.dat
+/XPP/LEMS_nca.xml
+/XPP/nca.model.xml
+/XPP/report.txt
