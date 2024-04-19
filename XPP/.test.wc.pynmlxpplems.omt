@@ -1,7 +1,7 @@
-target: nca.ode
-engine: XPP
+target: wc.ode
+engine: pyNEURON_XPP_LEMS
 
-mep: .test.nca.mep
+mep: .test.wc.mep
 experiments:
   spikes:
     observables:
@@ -9,9 +9,9 @@ experiments:
         file: 
           path: output.dat
           columns: [0,1]
-          scaling: [1, 1]
+          scaling: [1000, 1]
         spike detection: 
           method: threshold
-          threshold: 0
-        tolerance: 0.00
+          threshold: 0.53
+        tolerance: 0.009505703422053232
 

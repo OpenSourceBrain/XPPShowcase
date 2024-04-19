@@ -1,7 +1,7 @@
 target: fhn.ode
 engine: XPP
 
-mep: .test.fhn.xpp.mep
+mep: .test.fhn.mep
 experiments:
   spikes:
     observables:

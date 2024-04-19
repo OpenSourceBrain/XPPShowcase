@@ -7,3 +7,5 @@
 /XPP/report.txt
 /XPP/fhn.model.xml
 /XPP/LEMS_fhn.xml
+/XPP/LEMS_*.xml
+/XPP/wc.model.xml
