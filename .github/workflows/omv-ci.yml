@@ -29,7 +29,10 @@ jobs:
         
     - name: Install OMV
       run: |
-        pip install git+https://github.com/OpenSourceBrain/osb-model-validation
+        # experimental branch of pynml
+        pip install git+https://github.com//NeuroML/pyNeuroML@experimental
+
+        pip install git+https://github.com/OpenSourceBrain/osb-model-validation@test_xpp
         
     - name: Run OMV tests on engine ${{ matrix.engine }}
       run: |
