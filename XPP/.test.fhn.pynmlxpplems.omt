@@ -1,7 +1,7 @@
 target: fhn.ode
 engine: pyNEURON_XPP_LEMS
 
-mep: .test.fhn.xpp.mep
+mep: .test.fhn.mep
 experiments:
   spikes:
     observables:

@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [ 3.8, "3.10" ]
+        python-version: [ 3.9, "3.11" ]
         engine: [ XPP, jNeuroML, jNeuroML_Brian2, jNeuroML_XPP, pyNEURON_XPP_LEMS ]
 
     steps:
@@ -29,7 +29,13 @@ jobs:
         
     - name: Install OMV
       run: |
-        pip install git+https://github.com/OpenSourceBrain/osb-model-validation
+        # experimental branch of pynml
+        # pip install git+https://github.com//NeuroML/pyNeuroML@experimental
+        pip install pyneuroml
+
+        #pip install git+https://github.com/OpenSourceBrain/osb-model-validation@test_xpp
+        pip install OSBModelValidation
+        
         
     - name: Run OMV tests on engine ${{ matrix.engine }}
       run: |
